@@ -10,5 +10,14 @@
   grid-template-columns: repeat(4, 1fr);
   text-align: center;
   align-items: center;
-  margin: 35px
+  margin: 35px;
+  background-color: lightblue;
+  padding: 25px;
+}
+.locations{
+  margin: 15px;
+  text-align: center;
+}
+.location-contaner{
+  text-align: center;
 }
