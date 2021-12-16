@@ -9,7 +9,6 @@ class People extends React.Component{
     this.state={
         peopleData: [],
         inputData: "",
-        toggle: false,
         notFound: null,
         inputContainer: null
     }
@@ -37,7 +36,6 @@ class People extends React.Component{
 
       this.setState({
         inputContainer: this.state.inputData,
-        toggle: true,
         notFound: "Not Found",
         inputData: ""
       })
@@ -58,11 +56,12 @@ class People extends React.Component{
                   <h1>Search for a Person</h1>
                   <form onSubmit={this.handlePersonSearch}>
                       <input
-                      type="text"
-                      placeholder="Find Your Person"
-                      value={this.state.inputData}
-                      ></input>
-                      <button type="submit">Submit</button>
+                        onChange={this.handleonInput}
+                        type="text"
+                        placeholder="Find Your Person"
+                        value={this.state.inputData}
+                        ></input>
+                        <button type="submit">Submit</button>
                   </form>
                   <div id="person-container" >
                       <h1>Name: {renderedPerson.name}</h1>

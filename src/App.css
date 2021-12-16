@@ -24,9 +24,11 @@
 .movie-container{
   margin: 25px;
   padding: 15px;
+  background-color: rgb(197, 241, 197);
 
 }
 #person-container{
   margin: 25px;
   padding: 15px;
+  background-color: rgb(197, 245, 197);
 }
