@@ -11,7 +11,7 @@ class Home extends React.Component{
     return (
       <div className="home">
         <main>
-            <h1>Home Page</h1>
+            <h1>Welcome to GhibliApp</h1>
         </main>
 
       </div>
